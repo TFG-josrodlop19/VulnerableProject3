@@ -1,4 +1,29 @@
 {
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:c3bedeec-2773-456f-b5ab-47519f43a33f",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "metadata": {
+    "timestamp": "2025-09-09T00:00:00.000Z",
+    "tools": [
+      {
+        "externalReferences": [
+          {
+            "type": "build-system",
+            "url": "https://github.com/CycloneDX/cyclonedx-maven-plugin"
+          },
+          {
+            "type": "distribution",
+            "url": "https://mvnrepository.com/artifact/org.cyclonedx/cyclonedx-maven-plugin"
+          }
+        ],
+        "name": "cyclonedx-maven-plugin",
+        "vendor": "CycloneDX",
+        "version": "2.7.9"
+      }
+    ]
+  },
   "components": [
     {
       "bom-ref": "log4j-core-L1",
@@ -38,30 +63,5 @@
     {
       "ref": "log4j-api-L2"
     }
-  ],
-  "metadata": {
-    "timestamp": "2025-09-08T00:00:00.000Z",
-    "tools": [
-      {
-        "externalReferences": [
-          {
-            "type": "build-system",
-            "url": "https://github.com/CycloneDX/cyclonedx-maven-plugin"
-          },
-          {
-            "type": "distribution",
-            "url": "https://mvnrepository.com/artifact/org.cyclonedx/cyclonedx-maven-plugin"
-          }
-        ],
-        "name": "cyclonedx-maven-plugin",
-        "vendor": "CycloneDX",
-        "version": "2.7.9"
-      }
-    ]
-  },
-  "serialNumber": "urn:uuid:c3bedeec-2773-456f-b5ab-47519f43a33f",
-  "version": 1,
-  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
-  "bomFormat": "CycloneDX",
-  "specVersion": "1.5"
+  ]
 }
