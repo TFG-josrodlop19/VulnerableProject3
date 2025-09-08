@@ -1,42 +1,42 @@
 {
   "components": [
     {
-      "bom-ref": "xstream-L1",
-      "description": "maven dependency: xstream==1.4.6",
+      "bom-ref": "log4j-core-L1",
+      "description": "maven dependency: log4j-core==2.14.1",
       "externalReferences": [
         {
           "comment": "Maven Central Repository",
           "type": "distribution",
-          "url": "https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/"
+          "url": "https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/"
         }
       ],
-      "name": "com.thoughtworks.xstream:xstream",
-      "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.6",
+      "name": "org.apache.logging.log4j:log4j-core",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
       "type": "library",
-      "version": "1.4.6"
+      "version": "2.14.1"
     },
     {
-      "bom-ref": "commons-collections-L2",
-      "description": "maven dependency: commons-collections==3.1",
+      "bom-ref": "log4j-api-L2",
+      "description": "maven dependency: log4j-api==2.14.1",
       "externalReferences": [
         {
           "comment": "Maven Central Repository",
           "type": "distribution",
-          "url": "https://repo1.maven.org/maven2/commons-collections/commons-collections/"
+          "url": "https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/"
         }
       ],
-      "name": "commons-collections:commons-collections",
-      "purl": "pkg:maven/commons-collections/commons-collections@3.1",
+      "name": "org.apache.logging.log4j:log4j-api",
+      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1",
       "type": "library",
-      "version": "3.1"
+      "version": "2.14.1"
     }
   ],
   "dependencies": [
     {
-      "ref": "xstream-L1"
+      "ref": "log4j-core-L1"
     },
     {
-      "ref": "commons-collections-L2"
+      "ref": "log4j-api-L2"
     }
   ],
   "metadata": {
