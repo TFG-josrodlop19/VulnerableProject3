@@ -1,11 +1,46 @@
 {
-  "bomFormat": "CycloneDX",
-  "specVersion": "1.5",
-  "serialNumber": "urn:uuid:c3bedeec-2773-456f-b5ab-47519f43a33f",
-  "version": 1,
-  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "components": [
+    {
+      "bom-ref": "xstream-L1",
+      "description": "maven dependency: xstream==1.4.6",
+      "externalReferences": [
+        {
+          "comment": "Maven Central Repository",
+          "type": "distribution",
+          "url": "https://repo1.maven.org/maven2/com/thoughtworks/xstream/xstream/"
+        }
+      ],
+      "name": "com.thoughtworks.xstream:xstream",
+      "purl": "pkg:maven/com.thoughtworks.xstream/xstream@1.4.6",
+      "type": "library",
+      "version": "1.4.6"
+    },
+    {
+      "bom-ref": "commons-collections-L2",
+      "description": "maven dependency: commons-collections==3.1",
+      "externalReferences": [
+        {
+          "comment": "Maven Central Repository",
+          "type": "distribution",
+          "url": "https://repo1.maven.org/maven2/commons-collections/commons-collections/"
+        }
+      ],
+      "name": "commons-collections:commons-collections",
+      "purl": "pkg:maven/commons-collections/commons-collections@3.1",
+      "type": "library",
+      "version": "3.1"
+    }
+  ],
+  "dependencies": [
+    {
+      "ref": "xstream-L1"
+    },
+    {
+      "ref": "commons-collections-L2"
+    }
+  ],
   "metadata": {
-    "timestamp": "2025-09-09T00:00:00.000Z",
+    "timestamp": "2025-09-08T00:00:00.000Z",
     "tools": [
       {
         "externalReferences": [
@@ -24,44 +59,9 @@
       }
     ]
   },
-  "components": [
-    {
-      "bom-ref": "log4j-core-L1",
-      "description": "maven dependency: log4j-core==2.14.1",
-      "externalReferences": [
-        {
-          "comment": "Maven Central Repository",
-          "type": "distribution",
-          "url": "https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-core/"
-        }
-      ],
-      "name": "org.apache.logging.log4j:log4j-core",
-      "purl": "pkg:maven/org.apache.logging.log4j/log4j-core@2.14.1",
-      "type": "library",
-      "version": "2.14.1"
-    },
-    {
-      "bom-ref": "log4j-api-L2",
-      "description": "maven dependency: log4j-api==2.14.1",
-      "externalReferences": [
-        {
-          "comment": "Maven Central Repository",
-          "type": "distribution",
-          "url": "https://repo1.maven.org/maven2/org/apache/logging/log4j/log4j-api/"
-        }
-      ],
-      "name": "org.apache.logging.log4j:log4j-api",
-      "purl": "pkg:maven/org.apache.logging.log4j/log4j-api@2.14.1",
-      "type": "library",
-      "version": "2.14.1"
-    }
-  ],
-  "dependencies": [
-    {
-      "ref": "log4j-core-L1"
-    },
-    {
-      "ref": "log4j-api-L2"
-    }
-  ]
+  "serialNumber": "urn:uuid:b3bedeec-2773-456f-b5ab-47519f43a32f",
+  "version": 1,
+  "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5"
 }
