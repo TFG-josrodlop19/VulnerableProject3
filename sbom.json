@@ -1,24 +1,24 @@
 {
   "components": [
     {
-      "bom-ref": "commons-exec-L1",
-      "description": "maven dependency: commons-exec==1.3",
+      "bom-ref": "velocity-engine-core-L1",
+      "description": "maven dependency: velocity-engine-core==2.2",
       "externalReferences": [
         {
           "comment": "Maven Central Repository",
           "type": "distribution",
-          "url": "https://repo1.maven.org/maven2/org/apache/commons/commons-exec/"
+          "url": "https://repo1.maven.org/maven2/org/apache/velocity/velocity-engine-core/"
         }
       ],
-      "name": "org.apache.commons:commons-exec",
-      "purl": "pkg:maven/org.apache.commons/commons-exec@1.3",
+      "name": "org.apache.velocity:velocity-engine-core",
+      "purl": "pkg:maven/org.apache.velocity/velocity-engine-core@2.2",
       "type": "library",
-      "version": "1.3"
+      "version": "2.2"
     }
   ],
   "dependencies": [
     {
-      "ref": "commons-exec-L1"
+      "ref": "velocity-engine-core-L1"
     }
   ],
   "metadata": {
