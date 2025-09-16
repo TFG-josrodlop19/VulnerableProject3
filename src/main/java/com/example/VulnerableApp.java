@@ -7,12 +7,8 @@ import java.nio.file.Paths;
 
 public class VulnerableApp {
     public static void main(String[] args) throws Exception {
-        if (!(args.length >= 1)) {
-            System.err.println("Uso: java -jar <jar_file> <fichero_plantilla.vm>");
-            return;
-        }
-        
-        String templateFile = args[0];
+
+        String templateFile = "payload.vm";
         System.out.println("[+] Renderizando plantilla desde: " + templateFile);
         
         String templateContent = new String(Files.readAllBytes(Paths.get(templateFile)));
