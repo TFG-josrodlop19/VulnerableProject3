@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 
 public class VulnerableApp {
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
+        if (!(args.length >= 1)) {
             System.err.println("Uso: java -jar <jar_file> <fichero_plantilla.vm>");
             return;
         }
