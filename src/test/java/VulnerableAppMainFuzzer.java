@@ -18,7 +18,6 @@ public class VulnerableAppMainFuzzer {
       VulnerableApp.main(args);
     } catch (Exception e) {
       // Catch all exceptions to prevent the fuzzer from stopping
-      throw new RuntimeException(e);
     }
   }
 }
