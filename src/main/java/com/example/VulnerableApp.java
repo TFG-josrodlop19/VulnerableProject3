@@ -1,4 +1,5 @@
 package com.example;
+
 import org.apache.velocity.VelocityContext;
 import org.apache.velocity.app.Velocity;
 import java.io.StringWriter;
