@@ -32,8 +32,12 @@ public class VulnerableApp {
      * desde la línea de comandos. Lee el fichero y llama a nuestro método principal.
      */
     public static void main(String[] args) throws Exception {
+        if (args.length != 1) {
+            System.err.println("Uso: java -jar <jar_file> <fichero_plantilla.vm>");
+            return;
+        }
         
-        String templateFile = "payload.vm";
+        String templateFile = args[0];
         System.out.println("[+] Renderizando plantilla desde: " + templateFile);
         
         String templateContent = new String(Files.readAllBytes(Paths.get(templateFile)));
