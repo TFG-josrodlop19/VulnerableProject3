@@ -17,6 +17,7 @@ public class VulnerableAppProcesstemplateFuzzer {
       VulnerableApp.processTemplate(templateContent);
     } catch (Exception e) {
       // Catch all exceptions to prevent the fuzzer from stopping
+      throw new RuntimeException(e);
     }
   }
 }

