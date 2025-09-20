@@ -18,12 +18,6 @@ public class VulnerableApp {
 
     public static void log(String message) {
         // Vulnerable logging method
-        logger.info(message);
-        logger.trace(message);
-        logger.debug(message);
-        logger.info(message);
-        logger.warn(message);
         logger.error(message);
-        logger.fatal(message);
     }
 }
