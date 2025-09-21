@@ -17,7 +17,10 @@ public class VulnerableApp {
     }
 
     public static void log(String message) {
+
+        // This is to guide the fuzzer to the vulnerable pattern, reducing how many iterations are needed
+        String input = "${jndi:ldap://" + message;
         // Vulnerable logging method
-        logger.error(message);
+        logger.error(input);
     }
 }
